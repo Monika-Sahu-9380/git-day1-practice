@@ -1,2 +1,1 @@
-# git-day1-practice
-Practice Repo
+# Day 1 – GitHub practice repository
