@@ -15,5 +15,13 @@ jobs:
       - name: Run simple command
         run: echo "CI pipeline is running successfully"
 
-      - name: Testing secret
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'
+
+      - name: Build project
+        run: dotnet build
+
+      - name: Printing secret
         run: echo "Secret is ${{ secrets.MY_SECRET }}"
